@@ -6,14 +6,23 @@
 #    By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/14 17:07:05 by yaidriss          #+#    #+#              #
+<<<<<<< HEAD
 #    Updated: 2024/01/03 00:35:57 by yaidriss         ###   ########.fr        #
+=======
+#    Updated: 2024/01/03 11:35:23 by yassine          ###   ########.fr        #
+>>>>>>> 190d98e2acbce6d1c89fbf35f16371aa567b7678
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 FLAGE = -Wall -Wextra -Werror -std=c++98
+<<<<<<< HEAD
 NAME = whatever 
 SRC =  main.cpp
+=======
+NAME = convert 
+SRC = main.cpp
+>>>>>>> 190d98e2acbce6d1c89fbf35f16371aa567b7678
 OBJ = $(SRC:.cpp=.o)
 
 %.o : %.cpp
