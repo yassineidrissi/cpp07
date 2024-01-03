@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yassine <yassine@student.42.fr>            +#+  +:+       +#+         #
+#    By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/14 17:07:05 by yaidriss          #+#    #+#              #
-#    Updated: 2024/01/02 21:16:57 by yassine          ###   ########.fr        #
+#    Updated: 2024/01/03 00:35:57 by yaidriss         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 FLAGE = -Wall -Wextra -Werror -std=c++98
-NAME = convert 
-SRC =  whatever.cpp main.cpp
+NAME = whatever 
+SRC =  main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 %.o : %.cpp
@@ -38,5 +38,8 @@ fclean : clean
 	@rm -f $(NAME)
 	@echo "\033[31m Delete exucted file🗑\033[31m"
 re : fclean all
+
+run : re 
+	@./${NAME}
 
 .PHONY : all clean fclean re
