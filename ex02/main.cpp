@@ -6,8 +6,15 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 18:32:28 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/03 18:34:44 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/06 01:45:20 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
+
+int main()
+{
+	int *a = new int();
+	Array *A();
+	std::cout << A << std::endl;
+}
