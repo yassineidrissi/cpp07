@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.tpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 00:50:41 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/07 12:39:18 by yassine          ###   ########.fr       */
+/*   Updated: 2024/01/07 16:09:51 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,10 @@ template <typename N>
 
 Array<N>::Array(const Array<N>& other)
 {
-	(void) other;
+	this->_size = other._size;
+	this->_array = new N[this->_size];
+	for(unsigned int i = 0; i < _size; i++)
+		this->_array[i] = other._array[i];
 	std::cout << "Array::Array(const Array<N>& other" << std::endl;
 }
 
@@ -50,7 +53,14 @@ template <typename N>
 
 Array<N>& Array<N>::operator=(const Array<N> &other)
 {
-	(void) other;
+		if(this != other)
+	{
+		delete[] _array;
+		this->_size = other->_size;
+		_array = new Array[other->_size];
+		for(size_t n = 0; n < other->_size; n++)
+			this->_array[n] = other->_array[n];
+	}
 	std::cout << "Array::operator=(const Array<N> &other)" << std::endl;
 	return (*this);
 }
@@ -59,32 +69,5 @@ template <typename N>
 
 N& Array<N>::operator[](unsigned int index)
 {
-	(void) index;
-	std::cout << "Array::operator[](unsigned int index)" << std::endl;
-	return (*this);
+	return (this->_array[index]);
 }
-
-// template <typename T>
-// Array<T>::Array(const Array<T>& other)
-// {
-// 	_size = other._size;
-// 	_array = new T[_size];
-// 	for (unsigned int i = 0; i < _size; ++i)
-// 		_array[i] = other._array[i];
-// 	std::cout << "Array copy constructor" << std::endl;
-// }
-
-// template <typename T>
-// Array<T>& Array<T>::operator=(const Array<T>& other)
-// {
-// 	if (this != &other)
-// 	{
-// 		delete[] _array;
-// 		_size = other._size;
-// 		_array = new T[_size];
-// 		for (unsigned int i = 0; i < _size; ++i)
-// 			_array[i] = other._array[i];
-// 	}
-// 	std::cout << "Array assignment operator" << std::endl;
-// 	return *this;
-// }
