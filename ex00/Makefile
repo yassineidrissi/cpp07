@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+         #
+#    By: yassine <yassine@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/03 18:25:25 by yaidriss          #+#    #+#              #
-#    Updated: 2024/01/03 18:25:34 by yaidriss         ###   ########.fr        #
+#    Updated: 2024/01/06 20:26:02 by yassine          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 FLAGE = -Wall -Wextra -Werror -std=c++98
 
-NAME = convert 
+NAME = whatever 
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 

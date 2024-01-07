@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 18:34:53 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/06 01:33:15 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/07 01:44:55 by yassine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,20 +30,3 @@ class Array
 };
 
 #include "Array.tpp"
-
-// #pragma once
-
-// #include <iostream>
-
-// template <typename T>
-// class Array
-// {
-//     public:
-//         Array();
-//         ~Array();
-//         Array(unsigned int n);
-//         Array(const Array<T>& other);
-//         Array& operator=(const Array<T>& other);
-//         T& operator[](unsigned int index);
-
-// };

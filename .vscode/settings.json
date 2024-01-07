@@ -55,5 +55,19 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "files.associations": {
+    "__bit_reference": "cpp",
+    "array": "cpp",
+    "bitset": "cpp",
+    "chrono": "cpp",
+    "deque": "cpp",
+    "functional": "cpp",
+    "span": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "unordered_map": "cpp",
+    "variant": "cpp",
+    "vector": "cpp"
+  }
 }
