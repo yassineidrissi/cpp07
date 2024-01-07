@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yassine <yassine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 18:34:53 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/07 01:44:55 by yassine          ###   ########.fr       */
+/*   Updated: 2024/01/07 17:04:35 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <iostream>
+#include <exception>
 
 template <typename T>
 class Array
@@ -24,6 +25,11 @@ class Array
 		Array(const Array<T>& other);
 		Array& operator=(const Array<T> &other);
 		T& operator[](unsigned int index);
+		class IndexOutofRangeException : public std::exception
+		{
+			public :
+			virtual const char* what() const throw();
+		};
     private:
         T* _array;
         unsigned int _size;
