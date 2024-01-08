@@ -6,7 +6,7 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 18:32:28 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/09 00:20:57 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/07 21:52:14 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,17 @@ int main()
 {
 	try
 	{
+		const Array<int *> b;
+		b[0] = 0;
 		Array<int *>  a;
-    	Array<int *>  c(1337);
-		for (int i = 0; i < 1337 ; i++)
+    	Array<int *>  c(42);
+		for (int i = 0; i < 42 ; i++)
 		{
 			int *p = new int(i);
 			c[i] = p;
 		}
     	Array<int *> d(a);
-    	std::cout << "a : " << *(c[42]) << std::endl;
+    	std::cout << "a : " << *(c[0]) << std::endl;
 	}
 	catch(const std::exception& e)
 	{

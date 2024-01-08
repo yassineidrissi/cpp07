@@ -6,7 +6,7 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 00:50:41 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/07 17:06:47 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/09 00:37:48 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ Array<N>& Array<N>::operator=(const Array<N> &other)
 
 template <typename N>
 
-N& Array<N>::operator[](unsigned int index)
+const N& Array<N>::operator[](unsigned int index) const
 {
 	if(index >= _size)
 	{

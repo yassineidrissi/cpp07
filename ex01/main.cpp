@@ -6,7 +6,7 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 17:47:37 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/03 18:22:31 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/09 00:09:08 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@ void to_upper(char& c)
 
 int main()
 {
+	const int a = 12;
 	char s[] = "hello world!";
 	std::cout << "Before : " <<  s << std::endl;
-	iter(s, 12, to_upper);
+	iter(s, a, to_upper);
 	std::cout << "After : " << s << std::endl;
 }
