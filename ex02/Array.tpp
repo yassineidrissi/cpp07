@@ -6,7 +6,7 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 00:50:41 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/09 01:52:45 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/09 18:12:35 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,16 @@ template <typename N>
 
 
 N& Array<N>::operator[](unsigned int index)
+{
+	if(index >= _size)
+	{
+		throw IndexOutofRangeException();
+	}
+	return (this->_array[index]);
+}
+template <typename N>
+
+const N& Array<N>::operator[](unsigned int index) const
 {
 	if(index >= _size)
 	{

@@ -6,7 +6,7 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 18:34:53 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/09 01:52:50 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/09 18:11:47 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class Array
 		Array(const Array<T>& other);
 		Array& operator=(const Array<T> &other);
 		T& operator[](unsigned int index);
+		const T& operator[](unsigned int index) const;
 		class IndexOutofRangeException : public std::exception
 		{
 			public :

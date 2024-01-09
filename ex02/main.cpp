@@ -6,11 +6,11 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 18:32:28 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/09 01:49:56 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/09 18:15:20 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Array1.hpp"
+#include "Array.hpp"
 
 int main()
 {
@@ -25,6 +25,8 @@ int main()
 		}
     	Array<int *> d(a);
     	std::cout << "a : " << *(c[42]) << std::endl;
+		const Array<int *> b(c);
+		std::cout << *(b[1]) << std::endl;
 	}
 	catch(const std::exception& e)
 	{
