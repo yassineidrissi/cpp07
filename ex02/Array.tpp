@@ -6,7 +6,7 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 00:50:41 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/09 00:37:48 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/09 01:52:45 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,23 +59,8 @@ Array<N>::Array(const Array<N>& other)
 
 template <typename N>
 
-Array<N>& Array<N>::operator=(const Array<N> &other)
-{
-		if(this != other)
-	{
-		delete[] _array;
-		this->_size = other->_size;
-		_array = new Array[other->_size];
-		for(size_t n = 0; n < other->_size; n++)
-			this->_array[n] = other->_array[n];
-	}
-	std::cout << "Array::operator=(const Array<N> &other)" << std::endl;
-	return (*this);
-}
 
-template <typename N>
-
-const N& Array<N>::operator[](unsigned int index) const
+N& Array<N>::operator[](unsigned int index)
 {
 	if(index >= _size)
 	{

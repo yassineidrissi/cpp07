@@ -6,11 +6,11 @@
 /*   By: yaidriss <yaidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 18:32:28 by yaidriss          #+#    #+#             */
-/*   Updated: 2024/01/09 00:20:57 by yaidriss         ###   ########.fr       */
+/*   Updated: 2024/01/09 01:49:56 by yaidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Array.hpp"
+#include "Array1.hpp"
 
 int main()
 {
